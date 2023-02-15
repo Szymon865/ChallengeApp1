@@ -1,11 +1,16 @@
-﻿string myName = "Szymon";
-string mySex = "Meszczyzna";
-var myAge = 36;
-var myAge2 = 30;
-string result = myName + mySex + myAge;
+﻿string Name = "Ewa";
+bool Female = true;
+int Age = 33;
 
-if(myName != mySex) ;
+if (Female && Age < 30)
 {
-    if(myAge2 < 31) ;
-        Console.WriteLine("Kobieta poniżej 30 lat");
+    Console.WriteLine("Kobieta poniżej 30 lat");
+}
+else if (Age == 33 && Name == "Ewa")
+{
+    Console.WriteLine("Ewa, Lat 33");
+}
+else if (!Female && Age < 18)
+{
+    Console.WriteLine("Niepełnoletni mężczyzna");
 }
